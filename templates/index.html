@@ -1,0 +1,102 @@
+{% include "header.html" %}
+
+	<section class="box">
+		<div>
+			 <img class="logoimg" src="{{ url_for('static', filename='assets/img/logoimg.png')}}">
+		</div>
+
+		<div class="hero-bg">
+     <img class="bg-aboutus" src="{{ url_for('static', filename='assets/img/topimg.jpg')}}">
+    </div>
+		<h1>FARMINGTON</h1>
+		<h3>From Seed To The Table</h3>
+
+	</section>
+
+
+	<section class="aboutussec">
+	<div class="heading_container heading_center"><h2>WHO ARE WE</h2></div>
+		<div class="wrap animate pop">
+      <div class="overlay">
+        <div class="overlay-content animate slide-left delay-2">
+          <h1 class="animate slide-left pop delay-4">Farmington</h1>
+          <p
+            class="animate slide-left pop delay-5"
+            style="color: white; margin-bottom: 2.5rem"
+          >
+            <em>Farming made easy</em>
+          </p>
+        </div>
+        <div class="image-content animate slide delay-5"></div>
+        <div class="dots animate">
+          <div class="dot animate slide-up delay-6"></div>
+          <div class="dot animate slide-up delay-7"></div>
+          <div class="dot animate slide-up delay-8"></div>
+        </div>
+      </div>
+      <div class="text">
+        <p>
+          Enhancing agriculture, enhancing lives, and cultivating crops to
+          increase farmer productivity. We employ state-of-the-art machine
+          learning and deep learning technologies to help you steer through the
+          complete agricultural process. Make wise choices based on your
+          knowledge of the local population, the elements affecting your crop,
+          and how to keep them healthy for a super great successful production.
+        </p>
+      </div>
+    </div>
+	</section>
+
+<section class="cardsection">
+	<div class="heading_container heading_center"><h2>OUR SERVICES</h2></div>
+
+	<div class="rowcard">
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="columncard">
+			<div class="card">
+				<div class="cover item-a">
+					<h1 class="itemparta">Crop </h1>
+					<h1 class="itempart">Recommendation</h1>
+
+					<div class="card-back">
+						<a href="{{url_for('services')}}">READ MORE</a>
+						<a href="{{url_for('crop_recommendation')}}">CROP</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="columncard">
+			<div class="card">
+				<div class="cover item-b">
+					<h1 class="itemparta">Fertiliser </h1>
+					<h1 class="itempart">Suggestion</h1>
+
+					<div class="card-back">
+						<a href="{{url_for('services')}}">READ MORE</a>
+						<a href="{{url_for('fertilizer_recommendation')}}">FERTILIZER</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="columncard">
+			<div class="card">
+				<div class="cover item-c">
+					<h1 class="itemparta">Disease</h1>
+					<h1 class="itempart">Detection</h1>
+
+					<div class="card-back">
+						<a href="{{url_for('services')}}">READ MORE</a>
+							<a href="{{url_for('disease_detection')}}">DETECT</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% include "footer.html" %}
+
